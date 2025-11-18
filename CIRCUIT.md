@@ -1,20 +1,16 @@
-# PCB Fabrication — Circuit Schematic
+# Professional Pcb Fabrication For Everyone — Circuit Notes
 
-- Course: Professional PCB Fabrication For Everyone
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/create-pcb-design-and-fabrication-for-everyone-pcbway-pcb-design/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Flow
+## Wiring Checklist
 
-- Layout -> Gerbers -> Order -> Assemble.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- Layout -> Gerber/Drill -> Fabrication -> Assembly
-```
-
-## Purchase With Discount
-
-Get a discounted price and produce professional PCBs — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
